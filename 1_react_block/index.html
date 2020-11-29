@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+ 	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+	<title>React_1homework</title>
+</head>
+<body>
+	<div id="root"></div>
+	<script type="text/babel">
+		function CompTP(props){
+			return (
+		<div className="onebox">
+			<h1>Student{props.fam} {props.name}</h1>
+		</div> )
+
+		}
+
+		class KompClassovii extends React.Component{
+			render(){
+				return (
+			<div className="twobox">
+				<h1>Otchestvo{this.props.name}{this.props.fam}</h1>
+			</div> )
+			}
+		}
+
+		ReactDOM.render(
+	<div className="mainbox">
+		<CompTP fam = "Bozhokoev" 
+				name = "Arzymat" />
+				<br />
+		<KompClassovii name = "Kemelovich"
+					   fam = "Bozhokoev" /> 
+		<h1>Hello React</h1>
+		<h2>How are you?</h2>
+        <h3>Nice to meet you</h3>
+	</div>	
+		,
+		document.getElementById("root")
+    )
+	</script>
+</body>
+</html>
