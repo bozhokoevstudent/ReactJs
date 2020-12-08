@@ -1,0 +1,17 @@
+.mainbox {
+    display: flex;
+    border: 1px solid red;
+    background-color: rgb(188, 238, 215);
+}
+.contactlist {
+    border: 1px solid green;
+    width: 230px;
+    height: 100%;
+    background-color: rgb(162, 253, 162);
+}
+.smslist {
+    border: 1px solid rgb(0, 4, 255);
+    width: 100%;
+    height:100%;
+    background-color: rgb(136, 136, 248);
+}
